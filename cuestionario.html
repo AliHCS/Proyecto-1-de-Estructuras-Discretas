@@ -1,0 +1,236 @@
+﻿<!DOCTYPE HTML>
+<!--
+	Solarize by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+
+<head>
+  <link rel="shortcut icon" href="images/distributor_logo_slackware.ico" type=”image/ico”>
+
+  <title>Cuestionario</title>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery.dropotron.min.js"></script>
+  <script src="js/skel.min.js"></script>
+  <script src="js/skel_layers.min.js"></script>
+  <script src="js/init.js"></script>
+  <noscript>
+			<link rel="stylesheet" href="css/skel.css" />
+			<link rel="stylesheet" href="css/style.css" />
+		</noscript>
+  <!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+</head>
+
+<body>
+  *
+  <!-- Header Wrapper -->
+  <div class="wrapper style1">
+
+    <!-- Header -->
+    <div id="header">
+      <div class="container">
+
+
+        <!-- Nav -->
+        <nav id="nav">
+          <ul>
+            <li class="active"><a href="index.html">Inicio</a></li>
+
+            <li>
+              <a href="">Temas</a>
+              <ul>
+                <li><a href="La aplicacion de la aritmetica de residuos a las computadoras.html" accesskey="2" title="">La aplicacion de la aritmetica de residuos a las computadoras.</a></li>
+								<li><a href="Introduccion a los sistemas numericos.html">Introduccion a los sistemas numericos.</a></li>
+								<li><a href="Aritmetica Residual.html">Aritmetica Residual.</a></li>
+              </ul>
+            </li>
+
+            <li><a href="cuestionario.html" accesskey="5" title="">Cuestionario</a></li>
+            <li><a href="bibliografia.html" accesskey="5" title="">Bibliografia</a></li>
+          </ul>
+        </nav>
+
+      </div>
+    </div>
+
+    <!-- Main -->
+    <div id="main" class="wrapper style4">
+      <div class="container">
+        <div class="row">
+
+          <!-- Content -->
+          <div id="content" class="8u skel-cell-important">
+            <section>
+              <header class="major">
+                <h2>Cuestionario</h2>
+                <span class="byline"></span>
+              </header>
+              <!--No debe haber ninguna modificacion de aqui en adelante, recuerda que todo se trabajara sobre la carpeta js y el archivo preguntas-->
+              <font=4>
+                <script type="text/javascript" src="js/preguntas.js"></script>
+
+                <script type="text/javascript">
+                  var total = 3;
+                  var correctas = 0;
+                  var promedio = 0;
+                  var entrar = new Array;
+                  var examen = [];
+
+
+                  function examenAleatorio() {
+                    total = 10;
+                    var cont = 0;
+                    var indice = 0;
+
+                    while (cont < total) {
+
+                      indice = Math.floor(Math.random() * preguntas.length);
+
+                      if (!preguntas[indice].ocupado) {
+
+                        preguntas[indice].ocupado = true;
+                        examen[cont] = preguntas[indice];
+
+                        cont++;
+                      }
+
+
+                    }
+
+
+                  }
+
+
+
+                  function valua(indice, resp) {
+
+
+
+                    if (examen[indice].correcta == resp) {
+                      if (!entrar[indice]) {
+                        entrar[indice] = 1;
+                        correctas++;
+                      }
+
+                      document.getElementById('resp' + (indice)).innerHTML = '' /*'<span class="bien">Respuestas Correctas&nbsp;'+correctas+'  </span>'*/ ;
+
+                    } else {
+                      if (!entrar[indice]) {
+                        entrar[indice] = 1;
+
+                      }
+
+                      document.getElementById('resp' + (indice)).innerHTML = '' /*'<span class="mal">Respuesta Incorrecta&nbsp; </span>'*/ ;
+
+                    }
+
+                  }
+
+
+                  function notaFinal() {
+                    promedio = correctas / total;
+                    promedio *= 10;
+                    document.getElementById('puntuacionfinal').innerHTML = '<span class="notas"><center>Calificación: &nbsp;' + promedio + '</center></span>';
+
+                  }
+                </script>
+
+
+                <link href="js/stylep.css" rel="stylesheet" type="text/css">
+                </head>
+
+
+                <script language="javascript" type="text/javascript">
+                  function unoOn() {
+
+                    document.getElementById("Uno").style.visibility = "visible";
+                    //$("#Uno").hide().css({visibility: "visible"}).fadeIn("slow");
+                    // $('#Uno').css('visibility','visible').hide().fadeIn('slow');
+                  }
+
+                  function unoOut() {
+                    document.getElementById("Uno").style.visibility = "hidden";
+                    //$("#navigationcontainer").fadeTo("slow",0.6);
+                    //$('#Uno').css('visibility','hidden').hide().fadeIn('slow');
+                  }
+
+                  function dosOn() {
+                    document.getElementById("Dos").style.visibility = "visible";
+                    //$("#Dos").delay(500).fadeTo("slow", 0.6);
+                  }
+
+                  function dosOut() {
+                    document.getElementById("Dos").style.visibility = "hidden";
+                  }
+
+                  function tresOn() {
+                    document.getElementById("Tres").style.visibility = "visible";
+                  }
+
+                  function tresOut() {
+                    document.getElementById("Tres").style.visibility = "hidden";
+                  }
+
+                  function cuatroOn() {
+                    document.getElementById("Cuatro").style.visibility = "visible";
+                  }
+
+                  function cuatroOut() {
+                    document.getElementById("Cuatro").style.visibility = "hidden";
+                  }
+                </script>
+
+
+
+                </head>
+
+
+
+                <script type="text/javascript">
+                  examenAleatorio();
+
+                  for (i = 0; i < total; i++) {
+
+
+                    document.write("<div class='numero'  ><br><p style='font-size:30px; font-family:'Comic Sans MS', cursive;'>" + parseInt(i + 1) + "<p></div>");
+                    document.write("<div class='pregunta'>");
+                    document.write("<left>" + examen[i].pregun + "</left>"); //examen[i].pregunta
+                    document.write("<div id='resp" + i + "'>&nbsp;</div>");
+                    document.write("<td><left><input id='uno' type=radio name='cadena" + i + "' value='0' onClick=valua(" + i + ",this.value) />" + examen[i].respuestas[0] + "</left> </td>");
+                    document.write("<td><left><br><input id='dos' type=radio name='cadena" + i + "' value='1' onClick=valua(" + i + ",this.value) />" + examen[i].respuestas[1] + "</left></td></tr><tr>");
+                    document.write("<td><left><br><input id='tres' type=radio name='cadena" + i + "' value='2' onClick=valua(" + i + ",this.value) />" + examen[i].respuestas[2] + "</left></td>");
+                    document.write("<td><left><br><input  id='cuatro'type=radio name='cadena" + i + "' value='3' onClick=valua(" + i + ",this.value) />" + examen[i].respuestas[3] + "</left</td></tr>");
+
+
+                    document.write("</table></div>");
+
+                  }
+                </script>
+                <center <footer>
+                  <input class="button style2 scrolly" value="Revisar" onclick="notaFinal()" />
+                  <div id="puntuacionfinal">
+                    <center>&nbsp;</center>
+                  </div>
+                  <div id="notafinal">&nbsp;</div>
+                  </footer>
+                </center>
+                <center>
+                  <footer>
+                    <a href="cuestionario.html" class="button style2 scrolly">Intenta de Nuevo</a>
+
+                    <a href="index.html" class="button style2 scrolly">Inicio</a>
+                  </footer>
+                  <center>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+
+</html>

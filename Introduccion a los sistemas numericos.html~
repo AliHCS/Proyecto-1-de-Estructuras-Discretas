@@ -1,0 +1,129 @@
+<!DOCTYPE HTML>
+<!--
+	Solarize by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+
+<head>
+  <link rel="shortcut icon" href="images/distributor_logo_slackware.ico" type=”image/ico”>
+  <title>Temas - Sistemas Algebraicos(introduccion)</title>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery.dropotron.min.js"></script>
+  <script src="js/skel.min.js"></script>
+  <script src="js/skel_layers.min.js"></script>
+  <script src="js/init.js"></script>
+  <noscript>
+			<link rel="stylesheet" href="css/skel.css" />
+			<link rel="stylesheet" href="css/style.css" />
+		</noscript>
+  <!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+</head>
+
+<body>
+  *
+  <!-- Header Wrapper -->
+  <div class="wrapper style1">
+
+    <!-- Header -->
+    <div id="header">
+      <div class="container">
+
+
+        <!-- Nav -->
+        <nav id="nav">
+          <ul>
+            <li class="active"><a href="index.html">Inicio</a></li>
+
+            <li>
+              <a href="">Temas</a>
+              <ul>
+                <li><a href="introduccion.htmlhtml" accesskey="2" title="">Sistemas Algebraicos</a></li>
+                <li><a href="definiciones_y_conceptos.html">Definiciones y conceptos.</a></li>
+                <li><a href="tipos_y_caracteristicas.html">Tipos y características.</a></li>
+                <li><a href="semigrupos_monoides_y_grupos.html">Semigrupos, monoides y grupos.</a></li>
+              </ul>
+            </li>
+
+            <li><a href="ejercicios.html" accesskey="4" title="">Ejercicios</a></li>
+            <li><a href="cuestionario.html" accesskey="5" title="">Cuestionario</a></li>
+            <li><a href="bibliografia.html" accesskey="5" title="">Bibliografía</a></li>
+          </ul>
+        </nav>
+
+      </div>
+    </div>
+
+    <!-- Main -->
+    <div id="main" class="wrapper style4">
+      <div class="container">
+        <div class="row">
+
+          <!-- Content -->
+          <div id="content" class="8u skel-cell-important">
+            <section>
+              <header class="major">
+                <h2>Definiciones y Conceptos</h2>
+                <span class="byline"></span>
+              </header>
+              <p align="justify">Un <i>sistema algebraico(también conocida como estructura algebraica) &#60;M, (β<sub>i</sub>|iϵI);(ϭ<sub>j</sub>|jϵJ&#62;</i> es un conjunto <i>M</i> dotado de una familia de operaciones (β<sub>i</sub> | i ϵ I) y una familia de relaciones
+                (ϭ
+                <sub>j</sub>|j ϵ J) en el conjunto <i>M</i>.(Sigle, 1981, p. 330)</p>
+              <p align="justify">Un sistema consistente en un conjunto no vacío y en una o más operaciones n-arias sobre el conjunto recibe el nombre de sistemas algebraico. Un sistema algebraico se denotará por medio de {S, f<sub>1</sub>,f<sub>2</sub>,...} cuando S es
+                un conjunto no vacío y f<sub>1</sub>,f<sub>2</sub>,... son operaciones n-arias sobre S. Se tratarán principalmente sistemas algebraicos, con n=0,1 y 2, incluyendo solamente una o dos operaciones. Aunque casi siempre trataremos con un sistema
+                algebraico, en ocasiones será posible considerar dos o más sistemas que son del mismo "tipo" en cierto sentido. </p>
+              <p align="justify">Otra definición de <i>estructura algebraica</i>, es una n-tupla cuyos elementos son conjuntos y relaciones entre estos conjuntos, de las cuales se destacan en particular las operaciones y también, si se quiere, los elementos singulares que
+                  puedan tener estos conjuntos respecto a las operaciones asociadas. para denotarla podemos escribir:</p>
+              <center>
+                <p>(X,Y,...,R<sub>1</sub>,R<sub>2</sub>,... ,*,┴,... ,e,e',... )</p>
+              </center>
+              <p align="justify">donde X,Y,... son conjuntos, R<sub>1</sub>,R<sub>2</sub>,.. relaciones definidas en estos conjuntos, *,┴,... son operaciones n-arias (en general) sobre estos conjuntos, y e,e',... elementos singunlares de estas operaciones.(Comellas <i>et al</i>,
+                2001, pp. 208-209)</p>
+              <p align="justify">Algunos de los ejemplos más conocidos de estructuras algebraicas serían:</p>
+              <p align="justify">
+                <ol type="i">
+                  <li>(ℕ,≤). Relación de orden total sobre los naturales.</li>
+                  <li>(ℕ,=). Relación de equivalencia, también sobre los naturales.</li>
+                  <li>(צּ(X),∪,0). La operación unión que tiene por neutro el conjunto vacío</li>
+                  <li>(F(x),○,<i>Id</i>). La composición de aplicaciones con la aplicación identidad como neutro.</li>
+                  <li>(Q,+,-,0,1). La suma y el producto sobre los racionales con el 0 como neutro de la suma y el 1 como neutro del producto</li>
+                </ol>
+              </p>
+              <p>
+                <li> <a href="tipos_y_caracteristicas.html">Tipos y características.</a></li>
+              </p>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Footer -->
+    <div id="footer">
+      <section class="container">
+        <header class="major">
+          <h2>Redes Sociales</h2>
+          <span class="byline">DE LA FACULTAD DE INGENIERIA UNAM</span>
+        </header>
+        <ul class="icons">
+          <li class="active"><a href="https://www.facebook.com/gacetadigitalfi.unam" class="fa fa-facebook"><span>Facebook</span></a></li>
+          <li><a href="https://twitter.com/comunicafi" class="fa fa-twitter"><span>Twitter</span></a></li>
+        </ul>
+        <hr />
+      </section>
+
+      <!-- Copyright -->
+      <div id="copyright">
+        Autor: Romero Andrade Cristian
+      </div>
+    </div>
+
+</body>
+
+</html>

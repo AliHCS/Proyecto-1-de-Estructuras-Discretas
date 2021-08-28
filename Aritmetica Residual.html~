@@ -1,0 +1,157 @@
+<!DOCTYPE HTML>
+<!--
+	Solarize by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+
+<head>
+  <link rel="shortcut icon" href="images/distributor_logo_slackware.ico" type=”image/ico”>
+
+  <title>Tipos y Características</title>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery.dropotron.min.js"></script>
+  <script src="js/skel.min.js"></script>
+  <script src="js/skel_layers.min.js"></script>
+  <script src="js/init.js"></script>
+  <noscript>
+			<link rel="stylesheet" href="css/skel.css" />
+			<link rel="stylesheet" href="css/style.css" />
+		</noscript>
+  <!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+</head>
+
+<body>
+  *
+  <!-- Header Wrapper -->
+  <div class="wrapper style1">
+
+    <!-- Header -->
+    <div id="header">
+      <div class="container">
+
+
+        <!-- Nav -->
+        <nav id="nav">
+          <ul>
+            <li class="active"><a href="index.html">Inicio</a></li>
+
+            <li>
+              <a href="">Temas</a>
+              <ul>
+                <li><a href="introduccion.htmlhtml" accesskey="2" title="">Sistemas Algebraicos</a></li>
+                <li><a href="definiciones_y_conceptos.html">Definiciones y conceptos.</a></li>
+                <li><a href="tipos_y_caracteristicas.html">Tipos y características.</a></li>
+                <li><a href="semigrupos_monoides_y_grupos.html">Semigrupos, monoides y grupos.</a></li>
+              </ul>
+            </li>
+
+            <li><a href="ejercicios.html" accesskey="4" title="">Ejercicios</a></li>
+            <li><a href="cuestionario.html" accesskey="5" title="">Cuestionario</a></li>
+            <li><a href="bibliografia.html" accesskey="5" title="">Bibliografía</a></li>
+          </ul>
+        </nav>
+
+      </div>
+    </div>
+
+    <!-- Main -->
+    <div id="main" class="wrapper style4">
+      <div class="container">
+        <div class="row">
+
+          <!-- Content -->
+          <div id="content" class="8u skel_cell-important">
+            <section>
+              <header class="major">
+                <h2>Tipos y Características</h2>
+                <span class="byline"></span>
+              </header>
+              <p align="justify">Sea <i>{S,∗, +}  un sistema algebraico donde ∗, + son operaciones binarias
+                sobre S
+              </p>
+
+
+              <h3><li type="square">Cerradura</li></h3>
+              <p>Sea a, b ∈ S, entonces a ∗ b ∈ S.
+                <p> <b>Ejemplo</b></p>
+                <p>  &nbsp;&nbsp;&nbsp;&nbsp;Si a, b ∈ Z, entonces a + b ∈ Z y a ∗ b ∈ Z, donde + y ∗ son las operaciones de suma y multiplicación</p>
+
+                <h3><li type="square">Asociatividad</li></h3>
+                <p>Sea a, b, c ∈ S, entoncesa ∗ b ∗ c = a ∗ (b ∗ c)</p>
+                <p> <b>Ejemplo</b></p>
+                <p>Si a, b, c ∈ Z, entonces a + b + c = a + (b + c) y a ∗ b ∗ c = a ∗ (b ∗ c), donde + y ∗ son las operaciones de suma y multiplicación</p>
+
+                <h3><li type="square"><b>Conmutatividad</b></li></h3>
+                <p> Sea a, b ∈ S, entonces a ∗ b = b ∗ a</p>
+                <p><b>Ejemplo</b></p>
+                <p>Si a, b ∈ Z, entonces a + b = b + a y a ∗ b = b ∗ a, donde + y ∗ son lasoperaciones de suma y multiplicación</p>
+
+                <h3><li type="square"><b>Elemento identidad</b></li></h3>
+                <p>Existe un elemento e ∈ S que para cualquier a ∈ S, a ∗ e = e ∗ a = a</p>
+                <p>El elemento e es el elemento identidad en S con respecto a la operación ∗</p>
+                <p><b>Ejemplo</b></p>
+                <p>0 y 1 son los elementos identidad de Z con respecto a las operaciones de suma y multiplicación</p>
+
+                <h3><li type="square"><b>Elemento inverso</b></li></h3>
+                <p>Existe un elemento a<sup>-1</sup> ∈ S que para cualquier a ∈ S, a ∗ a<sup>-1</sup> = a<sup>-1</sup> ∗ a = e</p>
+                <p>El elemento a<sup>-1</sup> es el elemento inverso de a bajo la operación ∗</p>
+                <p><b>Ejemplo</b></p>
+                <p>Para cada a ∈ Z, −a es el inverso de a bajo la operación de suma</p>
+
+                <h3><li type="square"><b>Distributividad</b></li></h3>
+                <p>Sea a, b, c ∈ S, entonces a ∗ b + c = a ∗ b + a ∗ c</p>
+                <p><b>Ejemplo</b></p>
+                <p>Si a, b, c ∈ Z, entonces la operación multiplicación es distributiva sobre la suma</p>
+
+                <h3><li type="square"><b>Cancelación</b></li></h3>
+                <p>Sea a, b, c ∈ S y a ≠ 0, entonces</p>
+                <p>a∗b =a∗c ⇒b =c</p>
+                <p>b∗a =c∗a ⇒b =c</p>
+                <p><b>Ejemplo</b></p>
+                <p>Si a, b, c ∈ Z, entonces la cancelación se cumple para la suma y la multiplicación</p>
+
+                <h3><li type="square"><b>Elemento idempotente</b></li></h3>
+                <p>Un elemento a ∈ S es un elemento idempotente con respecto a la operación ∗, si a ∗ a = a</p>
+                <p><b>Ejemplo</b></p>
+                <p>0 ∈ Z es un elemento idempotente bajo la suma</p>
+                <p>0,1 ∈ Z son elementos idempotentes bajo la multiplicación</p>
+
+              <p>
+                <li> <a href="semigrupos_monoides_y_grupos.html">Semigrupos, Monoides y Grupos.</a></li>
+              </p>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Footer -->
+    <div id="footer">
+      <section class="container">
+        <header class="major">
+          <h2>Redes Sociales</h2>
+          <span class="byline">DE LA FACULTAD DE INGENIERIA UNAM</span>
+        </header>
+        <ul class="icons">
+          <li class="active"><a href="https://www.facebook.com/gacetadigitalfi.unam" class="fa fa-facebook"><span>Facebook</span></a></li>
+          <li><a href="https://twitter.com/comunicafi" class="fa fa-twitter"><span>Twitter</span></a></li>
+        </ul>
+        <hr />
+      </section>
+
+      <!-- Copyright -->
+      <div id="copyright">
+        Autor: Romero Andrade Cristian
+      </div>
+    </div>
+
+</body>
+
+</html>
